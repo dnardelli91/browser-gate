@@ -1,0 +1,25 @@
+{
+  "name": "browser-gate",
+  "version": "1.0.0",
+  "description": "CLI tool for auditing npm dependencies, browser extension permissions, and install scripts",
+  "main": "dist/index.js",
+  "bin": {
+    "browser-gate": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["security", "npm", "browser-extension", "audit", "cli"],
+  "author": "dnardelli91",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
